@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_sportactivity" />
 
     <TextView
-        android:id="@+id/textView5textview_workoutdetail_labelsummary"
+        android:id="@+id/textview_workoutdetail_labelsummary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
@@ -93,8 +93,8 @@
         android:layout_marginTop="16dp"
         android:text=" Duration"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintStart_toStartOf="@+id/textView5textview_workoutdetail_labelsummary"
-        app:layout_constraintTop_toBottomOf="@+id/textView5textview_workoutdetail_labelsummary" />
+        app:layout_constraintStart_toStartOf="@+id/textview_workoutdetail_labelsummary"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsummary" />
 
     <TextView
         android:id="@+id/textview_workoutdetail_valueduration"
@@ -119,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toEndOf="@+id/textview_workoutdetail_labelduration"
-        app:layout_constraintTop_toBottomOf="@+id/textView5textview_workoutdetail_labelsummary" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsummary" />
 
     <TextView
         android:id="@+id/textview_workoutdetail_valuecalories"
