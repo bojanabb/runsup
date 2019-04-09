@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.robolectric:shadows-multidex:3.3.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robolectric/shadows-multidex/3.3.1/1d128d050fe33889f78edbb8a72a0d187402c489/shadows-multidex-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.robolectric/shadows-multidex/3.3.1/fce020c3ab2b414e9ece3eb20f38946953686916/shadows-multidex-3.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">RunsUp2</string>
     <string name="title_activity_maps">Map</string>
+    <string name="workoutdetail_workoutname">My Workout</string>
+    <string name="textview_workoutdetail_valuecalories">0 kcal</string>
+    <!--<sting name="textview_workoutdetail_valuecalories"></sting>-->
+    <string name="textview_workoutdetail_sportactivity">Running</string>
+    <string name ="textview_workoutdetail_activitydate">01.01.2019</string>
+    <string name="textview_workoutdetail_valueduration">0.0.0</string>
+    <string name="textview_workoutdetail_valuedistance">0 kcal</string>
+    <string name="textview_workoutdetail_valiueavgpace">0 min/km</string>
 </resources>
