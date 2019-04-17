@@ -1,12 +1,27 @@
 <resources>
     <string name="app_name">RunsUp2</string>
     <string name="title_activity_maps">Map</string>
-    <string name="workoutdetail_workoutname">My Workout</string>
-    <string name="textview_workoutdetail_valuecalories">0 kcal</string>
-    <!--<sting name="textview_workoutdetail_valuecalories"></sting>-->
-    <string name="textview_workoutdetail_sportactivity">Running</string>
-    <string name ="textview_workoutdetail_activitydate">01.01.2019</string>
-    <string name="textview_workoutdetail_valueduration">0.0.0</string>
-    <string name="textview_workoutdetail_valuedistance">0 kcal</string>
-    <string name="textview_workoutdetail_valiueavgpace">0 min/km</string>
+    <string name="stopwatch_continue">Continue</string>
+    <string name="workoutdetail_workoutname">Workout</string>
+    <string name="stopwatch_stop">Stop</string>
+    <string name="stopwatch_start">Start</string>
+    <string name="stopwatch_endworkout">End</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="permission_location_rationale">Permission</string>
+    <string name="ok">Ok</string>
+    <string name="location_updated_message">Location Updated</string>
+    <!--<string name="title_activity_maps">Map</string>-->
+    <!--<string name="workoutdetail_workoutname">My Workout</string>-->
+    <!--<string name="textview_workoutdetail_valuecalories">0 kcal</string>-->
+    <!--&lt;!&ndash;<sting name="textview_workoutdetail_valuecalories"></sting>&ndash;&gt;-->
+    <!--<string name="textview_workoutdetail_sportactivity">Running</string>-->
+    <!--<string name ="textview_workoutdetail_activitydate">01.01.2019</string>-->
+    <!--<string name="textview_workoutdetail_valueduration">0.0.0</string>-->
+    <!--<string name="textview_workoutdetail_valuedistance">0 kcal</string>-->
+    <!--<string name="textview_workoutdetail_valiueavgpace">0 min/km</string>-->
+    <!--<string name="ok">Ok</string>-->
+    <!--<string name="yes">Yes</string>-->
+    <!--<string name="no">No</string>-->
+    <!--<string name="location_updated_message">Location Updated</string>-->
 </resources>
