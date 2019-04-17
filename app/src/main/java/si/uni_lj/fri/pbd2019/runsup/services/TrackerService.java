@@ -61,9 +61,6 @@ public class TrackerService extends Service {
         Intent broadCastIntent = new Intent();
         broadCastIntent.setAction(StopwatchActivity.TICK);
         this.duration =(SystemClock.uptimeMillis()	-start);
-        //Log.d("MainActivity",  String.valueOf(SystemClock.uptimeMillis()));
-        //Log.d("MainActivity", "st");
-        //Log.d("MainActivity", String.valueOf(start));
         broadCastIntent.putExtra("duration", String.valueOf(getDuration()/1000));
         broadCastIntent.putExtra("distance", getDistance());
         broadCastIntent.putExtra("pace", getPace());

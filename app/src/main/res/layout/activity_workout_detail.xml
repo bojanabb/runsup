@@ -184,10 +184,11 @@
         android:id="@+id/textview_workoutdetail_labelsocialshare"
         android:layout_width="0dp"
         android:layout_height="23dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:text=" Social Share"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -195,7 +196,7 @@
         android:id="@+id/button_workoutdetail_fbsharebtn"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/fac"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view" />
@@ -205,8 +206,7 @@
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/gg"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toEndOf="@+id/button_workoutdetail_fbsharebtn" />
@@ -215,7 +215,7 @@
         android:id="@+id/button_workoutdetail_emailshare"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/maiil"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -227,8 +227,7 @@
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/twitt"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintStart_toEndOf="@+id/button_workoutdetail_gplusshare" />
@@ -236,7 +235,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
-        android:layout_height="165dp"
+        android:layout_height="193dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/viewborder"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -265,5 +264,19 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_workoutdetail_showmap" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="200px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="top|left"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsocialshare" />
 
 </android.support.constraint.ConstraintLayout>
