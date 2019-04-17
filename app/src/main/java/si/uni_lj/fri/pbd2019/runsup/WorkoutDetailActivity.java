@@ -41,6 +41,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     public static Intent getTwitterIntent(Context ctx, String shareText)
     {
         Intent shareIntent;
+        //calls doesPackageExists
 
         if(doesPackageExists(ctx, "com.twitter.android"))
         {
