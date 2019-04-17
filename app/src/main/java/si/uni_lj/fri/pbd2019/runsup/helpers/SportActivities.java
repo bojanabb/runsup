@@ -1,8 +1,18 @@
 package si.uni_lj.fri.pbd2019.runsup.helpers;
 
+import android.content.Context;
+
 import java.util.List;
 
-final class SportActivities {
+public class SportActivities {
+
+    public static Integer[] act={1,2,3};
+
+    public static String getActivityType(Context ctx, Integer type) {
+        if(type==1) return "Running";
+        else if(type==2) return "Walking";
+        return "Cycling";
+    }
 
     public static double getMET(int activityType, Float speed) {
        float speedn = (int)Math.ceil(speed * 2.24f);

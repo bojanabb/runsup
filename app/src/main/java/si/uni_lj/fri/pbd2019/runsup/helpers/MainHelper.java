@@ -6,49 +6,6 @@ public class MainHelper {
     private static  final float KM_TO_MI = 0.62137119223734f;
     private static  final float MIN_TO_MINpMI = 1.609344f;
 
-//    public static String formatDuration(long time) {
-//        long h = time / 3600;
-//        long min = 0;
-//        long sec = 0;
-//        if(h>0) {
-//            min=time/60-h*60;
-//            if(min>0) {
-//                sec=time-h*3600-min*60;
-//            }
-//            else {
-//                sec=time-h*3600;
-//            }
-//        }
-//        else {
-//            min= time*60;
-//            if(min>0) {
-//                sec=time-min*60;
-//            }
-//            else {
-//                sec=time;
-//            }
-//        }
-//        String ho = Long.toString(h);
-//        ho=ho+":";
-//        String mi = Long.toString(min);
-//        mi=mi+":";
-//        String se = Long.toString(sec);
-//        if(h<9) {
-//
-//            ho = "0" + ho ;
-//        }
-//        else if(min<9) {
-//
-//            mi="0" + mi ;
-//        }
-//        else if(sec<9) {
-//            se = "0" + se;
-//        }
-//        ho=ho.concat(mi);
-//        ho=ho.concat(se);
-//        return ho;
-//    }
-
     public static String formatDuration(long time) {
         long hours = time / 3600;
         long secondsLeft = time - hours * 3600;

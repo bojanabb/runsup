@@ -226,4 +226,20 @@ public class TrackerService extends Service {
             }
         }
     }
+
+    public double distanceBetween(float lat_a, float lng_a, float lat_b, float lng_b) {
+        float p=(float)(180.f/Math.PI);
+
+        float a1= lat_a/p;
+        float a2= lng_a/p;
+        float b1= lat_b/p;
+        float b2= lng_b/p;
+
+        double f1 = Math.cos(a2)*Math.cos(a1)*Math.cos(b1)*Math.cos(b2);
+        double f2 = Math.sin(a2)*Math.cos(a1)*Math.cos(b1)*Math.sin(b2);
+        double f3 = Math.sin(a1)*Math.sin(b1);
+        double fin = Math.acos(f1+f2+f3);
+
+        return 6366000*fin;
+    }
 }
