@@ -15,17 +15,29 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
 import si.uni_lj.fri.pbd2019.runsup.helpers.MainHelper;
+import si.uni_lj.fri.pbd2019.runsup.helpers.SportActivities;
 import si.uni_lj.fri.pbd2019.runsup.services.TrackerService;
 
 
 public class StopwatchActivity extends AppCompatActivity {
 
     boolean firstClick=true;
+    int sportType=0;
     int tempF=1;
+    long dur=0;
+    double dist=0;
+    double pace=0;
+    int aType=0;
+    double cal=0;
+    TextView txtvDistance;
+    TextView txtvDuration;
+    TextView txtvPace;
+    TextView txtvCalories;
     MyBroadCastReceiver mBroadcastReceiver;
     private static final int REQUEST_ID_LOCATION_PERMISSIONS = 34;
     private final String TAG = "MainActivity";
@@ -46,9 +58,9 @@ public class StopwatchActivity extends AppCompatActivity {
                         public void onClick(View v) {
                             if(firstClick==true) {
                                 if(tempF==1) {
-                                    Log.d("Heelp", "aaa");
                                     Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
                                     intent.setAction(TrackerService.COMMAND_START);
+                                    intent.putExtra("sportActivity",sportType);
                                     startService(intent);
                                     tempF=0;
                                 }
@@ -97,7 +109,12 @@ public class StopwatchActivity extends AppCompatActivity {
                 }
             }
         });
-
+        final Button chooseType=(Button)findViewById(R.id.button_stopwatch_selectsport);
+        chooseType.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                buttonSelectSportPressed(chooseType);
+            }
+        });
     }
 
     @Override
@@ -109,7 +126,6 @@ public class StopwatchActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        Log.d("MainActivity","in resume");
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(TICK);
         registerReceiver(mBroadcastReceiver, intentFilter);
@@ -120,11 +136,23 @@ public class StopwatchActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             try {
-                String duration = intent.getStringExtra("duration");
-                long temp=Long.parseLong(duration);
-                String result = MainHelper.formatDuration(temp);
-                TextView text=(TextView) findViewById(R.id.textview_stopwatch_duration);
-                text.setText(result);
+                dist=intent.getExtras().getDouble("distance");
+                txtvDistance=(TextView) findViewById(R.id.textview_stopwatch_distance);
+                String disRes=MainHelper.formatDistance(dist);
+                txtvDistance.setText(disRes);
+                pace=intent.getExtras().getDouble("pace");
+                txtvPace=(TextView) findViewById(R.id.textview_stopwatch_pace);
+                String paceRes=MainHelper.formatPace(pace);
+                txtvPace.setText(paceRes);
+                aType=intent.getExtras().getInt("sportActivity");
+                txtvCalories=(TextView) findViewById(R.id.textview_stopwatch_calories);
+                cal=intent.getExtras().getDouble("calories");
+                String calRes=MainHelper.formatCalories(cal);
+                txtvCalories.setText(calRes);
+                dur = intent.getExtras().getLong("duration"); // data is a key specified to intent while sending broadcast
+                txtvDuration=(TextView) findViewById(R.id.textview_stopwatch_duration);
+                String resDur = MainHelper.formatDuration(dur);
+                txtvDuration.setText(resDur);
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -179,4 +207,45 @@ public class StopwatchActivity extends AppCompatActivity {
 
         }
     }
+
+    public void typeActivity(int type) {
+        Button btnTypeAct=(Button)findViewById(R.id.button_stopwatch_selectsport);
+        if(type==0) {
+            btnTypeAct.setText("Running");
+            sportType=0;
+        }
+        else if(type==1) {
+            btnTypeAct.setText("Walking");
+            sportType=1;
+        }
+        else {
+            btnTypeAct.setText("Cycling");
+            sportType = 2;
+        }
+    }
+
+    public void buttonSelectSportPressed(Button button) {
+        AlertDialog.Builder builderSingle=new AlertDialog.Builder(this);
+        builderSingle.setTitle("Select Sport Activity:");
+        final ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this, android.R.layout.select_dialog_singlechoice);
+        for(Integer activity: SportActivities.act){
+            arrayAdapter.add(SportActivities.getActivityType(this,activity));
+        }
+        builderSingle.setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which){
+                dialog.dismiss();
+            }
+        });
+        builderSingle.setAdapter(arrayAdapter, new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which){
+                typeActivity(which);
+            }
+        });
+        AlertDialog dialog = builderSingle.create();
+        dialog.show();
+    }
+
+
 }
