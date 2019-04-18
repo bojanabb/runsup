@@ -27,13 +27,13 @@ import si.uni_lj.fri.pbd2019.runsup.services.TrackerService;
 public class StopwatchActivity extends AppCompatActivity {
 
     boolean firstClick=true;
-    int sportType=0;
+    int sportActivity=0;
     int tempF=1;
-    long dur=0;
-    double dist=0;
+    long duration=0;
+    double distance=0;
     double pace=0;
     int aType=0;
-    double cal=0;
+    double calories=0;
     TextView txtvDistance;
     TextView txtvDuration;
     TextView txtvPace;
@@ -59,7 +59,7 @@ public class StopwatchActivity extends AppCompatActivity {
                                 if(tempF==1) {
                                     Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
                                     intent.setAction(TrackerService.COMMAND_START);
-                                    intent.putExtra("sportActivity",sportType);
+                                    intent.putExtra("sportActivity",sportActivity);
                                     startService(intent);
                                     tempF=0;
                                 }
@@ -87,7 +87,7 @@ public class StopwatchActivity extends AppCompatActivity {
                             b.setMessage("Are you sure?");
                             b.setCancelable(true);
 
-                            b.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                            b.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     Intent intent = new Intent(StopwatchActivity.this, WorkoutDetailActivity.class);
@@ -95,7 +95,7 @@ public class StopwatchActivity extends AppCompatActivity {
                                     startActivity(intent);
                                 }
                             });
-                            b.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                            b.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
@@ -137,13 +137,13 @@ public class StopwatchActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             try {
-                dur = intent.getExtras().getLong("duration");
+                duration = intent.getExtras().getLong("duration");
                 txtvDuration=(TextView) findViewById(R.id.textview_stopwatch_duration);
-                String resDur = MainHelper.formatDuration(dur);
+                String resDur = MainHelper.formatDuration(duration);
                 txtvDuration.setText(resDur);
-                dist=intent.getExtras().getDouble("distance");
+                distance=intent.getExtras().getDouble("distance");
                 txtvDistance=(TextView) findViewById(R.id.textview_stopwatch_distance);
-                String disRes=MainHelper.formatDistance(dist);
+                String disRes=MainHelper.formatDistance(distance);
                 txtvDistance.setText(disRes);
                 pace=intent.getExtras().getDouble("pace");
                 txtvPace=(TextView) findViewById(R.id.textview_stopwatch_pace);
@@ -151,8 +151,8 @@ public class StopwatchActivity extends AppCompatActivity {
                 txtvPace.setText(paceRes);
                 aType=intent.getExtras().getInt("sportActivity");
                 txtvCalories=(TextView) findViewById(R.id.textview_stopwatch_calories);
-                cal=intent.getExtras().getDouble("calories");
-                String calRes=MainHelper.formatCalories(cal);
+                calories=intent.getExtras().getDouble("calories");
+                String calRes=MainHelper.formatCalories(calories);
                 txtvCalories.setText(calRes);
             }
             catch (Exception e) {
@@ -168,18 +168,7 @@ public class StopwatchActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-   /* @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        if (requestCode == REQUEST_ID_LOCATION_PERMISSIONS) {
-            Log.d("MainActivity",String.valueOf(grantResults.length));
-            if (grantResults.length > 0
-                    && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-                startLocationUpdates();
-            }
-        }
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-    }
-*/
+
     private void startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
@@ -213,15 +202,15 @@ public class StopwatchActivity extends AppCompatActivity {
         Button btnTypeAct=(Button)findViewById(R.id.button_stopwatch_selectsport);
         if(type==0) {
             btnTypeAct.setText("Running");
-            sportType=0;
+            sportActivity=0;
         }
         else if(type==1) {
             btnTypeAct.setText("Walking");
-            sportType=1;
+            sportActivity=1;
         }
         else {
             btnTypeAct.setText("Cycling");
-            sportType = 2;
+            sportActivity = 2;
         }
     }
 
@@ -249,10 +238,10 @@ public class StopwatchActivity extends AppCompatActivity {
     }
 
     public void sendInfo(Intent intent){
-        intent.putExtra("duration",dur);
-        intent.putExtra("distance",dist);
+        intent.putExtra("duration",duration);
+        intent.putExtra("distance",distance);
         intent.putExtra("pace",pace);
         intent.putExtra("activity",aType);
-        intent.putExtra("calories",cal);
+        intent.putExtra("calories",calories);
     }
 }
