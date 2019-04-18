@@ -47,10 +47,10 @@ public class TrackerService extends Service {
     long start=0;
     Timer timer;
     Handler handler;
-    public final static String COMMAND_START = "si.uni_lj.fri.pbd2019.runsup2.COMMAND_START";
-    public final static String COMMAND_CONTINUE = "si.uni_lj.fri.pbd2019.runsup2.COMMAND_CONTINUE";
-    public final static String COMMAND_PAUSE = "si.uni_lj.fri.pbd2019.runsup2.COMMAND_PAUSE";
-    public final static String COMMAND_STOP = "si.uni_lj.fri.pbd2019.runsup2.COMMAND_STOP";
+    public final static String COMMAND_START = "si.uni_lj.fri.pbd2019.runsup.COMMAND_START";
+    public final static String COMMAND_CONTINUE = "si.uni_lj.fri.pbd2019.runsup.COMMAND_CONTINUE";
+    public final static String COMMAND_PAUSE = "si.uni_lj.fri.pbd2019.runsup.COMMAND_PAUSE";
+    public final static String COMMAND_STOP = "si.uni_lj.fri.pbd2019.runsup.COMMAND_STOP";
 
     public void startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
