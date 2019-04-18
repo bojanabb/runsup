@@ -27,6 +27,7 @@ public class MainHelper {
 
         return formattedTime;
     }
+
     public static String formatDistance(double n) {
        double a = n/1000.0;
        double b = Math.round((a*100.0))/100.0;

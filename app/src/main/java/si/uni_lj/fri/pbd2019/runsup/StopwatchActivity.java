@@ -136,6 +136,10 @@ public class StopwatchActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             try {
+                dur = intent.getExtras().getLong("duration");
+                txtvDuration=(TextView) findViewById(R.id.textview_stopwatch_duration);
+                String resDur = MainHelper.formatDuration(dur);
+                txtvDuration.setText(resDur);
                 dist=intent.getExtras().getDouble("distance");
                 txtvDistance=(TextView) findViewById(R.id.textview_stopwatch_distance);
                 String disRes=MainHelper.formatDistance(dist);
@@ -149,10 +153,6 @@ public class StopwatchActivity extends AppCompatActivity {
                 cal=intent.getExtras().getDouble("calories");
                 String calRes=MainHelper.formatCalories(cal);
                 txtvCalories.setText(calRes);
-                dur = intent.getExtras().getLong("duration"); // data is a key specified to intent while sending broadcast
-                txtvDuration=(TextView) findViewById(R.id.textview_stopwatch_duration);
-                String resDur = MainHelper.formatDuration(dur);
-                txtvDuration.setText(resDur);
             }
             catch (Exception e) {
                 e.printStackTrace();

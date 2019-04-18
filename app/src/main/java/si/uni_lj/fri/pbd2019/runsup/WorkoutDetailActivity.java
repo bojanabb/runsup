@@ -76,7 +76,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         });
 
         final EditText shareM = (EditText) findViewById(R.id.edit_text);
-        shareM.setText("I was out for WORKOUT_TYPE. I did DISTANCE UNIT in DURATION.", TextView.BufferType.EDITABLE);
+        shareM.setText("I was out for WORKOUT_TYPE. I did DISTANCE UNIT in DURATION.", TextView.BufferType.NORMAL);
 
         final Button email = (Button) findViewById(R.id.button_workoutdetail_emailshare);
         final Button facebook = (Button) findViewById(R.id.button_workoutdetail_fbsharebtn);
