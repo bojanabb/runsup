@@ -14,10 +14,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import okhttp3.internal.Util;
+import si.uni_lj.fri.pbd2019.runsup.helpers.MainHelper;
+import si.uni_lj.fri.pbd2019.runsup.helpers.SportActivities;
 
 public class WorkoutDetailActivity extends AppCompatActivity {
 
@@ -26,6 +32,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     double distance=0;
     double pace=0;
     double calories=0;
+    int activity=0;
     ArrayList<List<Location>> finalPositionList;
 
     public static boolean doesPackageExists(Context context, String packageName) {
@@ -78,6 +85,25 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         final EditText shareM = (EditText) findViewById(R.id.edit_text);
         shareM.setText("I was out for WORKOUT_TYPE. I did DISTANCE UNIT in DURATION.", TextView.BufferType.NORMAL);
 
+        getInfo();
+        TextView durationTextView = (TextView) findViewById(R.id.textview_workoutdetail_valueduration);
+        String durationString= MainHelper.formatDuration(duration);
+        durationTextView.setText(durationString);
+        String distanceString= MainHelper.formatDistance(distance);
+        TextView distanceTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuedistance);
+        distanceTextView.setText(distanceString+" km");
+        TextView paceTextView = (TextView) findViewById(R.id.textview_workoutdetail_valueavgpace);
+        String paceString= MainHelper.formatPace(pace);
+        paceTextView.setText(paceString+ "min/km");
+        TextView caloriesTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuecalories);
+        String caloriesString= MainHelper.formatCalories(calories);
+        caloriesTextView.setText(caloriesString+"  cal");
+        TextView activityTextView = (TextView) findViewById(R.id.textview_workoutdetail_sportactivity);
+        activityTextView.setText(SportActivities.getActivityType(this,activity));
+        TextView date=(TextView) findViewById(R.id.textview_workoutdetail_activitydate);
+        DateFormat currDate = SimpleDateFormat.getDateTimeInstance();
+        Date today = Calendar.getInstance().getTime();
+        date.setText(currDate.format(today));
         final Button email = (Button) findViewById(R.id.button_workoutdetail_emailshare);
         final Button facebook = (Button) findViewById(R.id.button_workoutdetail_fbsharebtn);
         final Button twitter = (Button) findViewById(R.id.button_workoutdetail_twittershare);
@@ -127,5 +153,13 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         super.onPause();
     }
 
+    public void getInfo() {
+        Intent in = getIntent();
+        duration=in.getExtras().getLong("duration");
+        distance=in.getExtras().getDouble("distance");
+        pace=in.getExtras().getDouble("pace");
+        calories=in.getExtras().getDouble("calories");
+        activity=in.getExtras().getInt("activity");
+    }
 
 }
