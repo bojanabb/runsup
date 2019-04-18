@@ -83,19 +83,18 @@ public class StopwatchActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             AlertDialog.Builder b = new AlertDialog.Builder(StopwatchActivity.this);
-                            b.setTitle("Please Confirm");
-                            b.setMessage("Are you sure?");
-                            b.setCancelable(true);
-
-                            b.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    Intent intent = new Intent(StopwatchActivity.this, WorkoutDetailActivity.class);
-                                    sendInfo(intent);
-                                    startActivity(intent);
-                                }
-                            });
-                            b.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                            b.setTitle("Please Confirm")
+                                 .setMessage("Are you sure?")
+                                .setCancelable(true)
+                                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent intent = new Intent(StopwatchActivity.this, WorkoutDetailActivity.class);
+                                        sendInfo(intent);
+                                        startActivity(intent);
+                                    }
+                                })
+                             .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
