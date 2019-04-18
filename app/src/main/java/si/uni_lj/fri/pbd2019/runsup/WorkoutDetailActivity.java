@@ -126,4 +126,6 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     public void onPause() {
         super.onPause();
     }
+
+
 }

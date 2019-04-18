@@ -69,7 +69,7 @@ public class StopwatchActivity extends AppCompatActivity {
                                     intent.setAction(TrackerService.COMMAND_CONTINUE);
                                     startService(intent);
                                 }
-                                button.setText("Stop");
+                                button.setText(R.string.stopwatch_stop);
                                 button1.setVisibility(View.INVISIBLE);
                                 firstClick=false;
                             }
@@ -91,8 +91,8 @@ public class StopwatchActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     Intent intent = new Intent(StopwatchActivity.this, WorkoutDetailActivity.class);
+                                    sendInfo(intent);
                                     startActivity(intent);
-
                                 }
                             });
                             b.setNegativeButton("NO", new DialogInterface.OnClickListener() {
@@ -247,5 +247,11 @@ public class StopwatchActivity extends AppCompatActivity {
         dialog.show();
     }
 
-
+    public void sendInfo(Intent intent){
+        intent.putExtra("duration",dur);
+        intent.putExtra("distance",dist);
+        intent.putExtra("pace",pace);
+        intent.putExtra("activity",aType);
+        intent.putExtra("calories",cal);
+    }
 }
