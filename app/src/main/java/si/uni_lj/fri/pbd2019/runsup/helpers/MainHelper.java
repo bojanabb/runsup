@@ -44,11 +44,11 @@ public class MainHelper {
         return Double.toString(a);
     }
 
-    public static double kmTOMi(double n) {
+    public static double kmToMi(double n) {
         return n*KM_TO_MI;
     }
 
-    public static double mpsTOMiph(double n) {
+    public static double mpsToMiph(double n) {
         return n*MpS_TO_MIpH;
     }
 

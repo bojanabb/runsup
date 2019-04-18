@@ -12,6 +12,7 @@ import android.os.Binder;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.os.SystemClock;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
@@ -51,6 +52,12 @@ public class TrackerService extends Service {
     public final static String COMMAND_PAUSE = "si.uni_lj.fri.pbd2019.runsup2.COMMAND_PAUSE";
     public final static String COMMAND_STOP = "si.uni_lj.fri.pbd2019.runsup2.COMMAND_STOP";
 
+    public void startLocationUpdates() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            mFusedLocationProviderClient.requestLocationUpdates(mLocationRequest,
+                    mLocationCallback, Looper.myLooper());
+        }
+    }
 
     private void broadCastSend()
     {
@@ -82,7 +89,7 @@ public class TrackerService extends Service {
         sendBroadcast(broadCastIntent);
     }
 
-    public void  timeTick() {
+    public void timeTick() {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -94,9 +101,8 @@ public class TrackerService extends Service {
 
     @Override
     public void onCreate() {
+        locationList=new ArrayList<Location>();
         handler=new Handler();
-        locationList = new ArrayList<Location>();
-        Log.d("MainActivity","Service has started");
         super.onCreate();
     }
 
@@ -106,8 +112,8 @@ public class TrackerService extends Service {
         public void onLocationChanged(android.location.Location location) {
             double lat=location.getLatitude();
             double lon=location.getLongitude();
-            Log.d("MainLoc", String.valueOf(lat));
-            Log.d("MainLoc", String.valueOf(lon));
+//            Log.d("MainLoc", String.valueOf(lat));
+//            Log.d("MainLoc", String.valueOf(lon));
             int size=locationList.size();
             if(mState==2){
                 distance=distance+locationList.get(size-1).distanceTo(location);
@@ -142,7 +148,6 @@ public class TrackerService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if(intent.getAction()==COMMAND_START) {
-           // sportType=intent.getExtras().getInt("sportType");
             mState=0;
             mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -155,7 +160,6 @@ public class TrackerService extends Service {
                     }
                 });
             }
-            Log.d("TrackerCheck", "in command start");
             start = SystemClock.uptimeMillis();
             mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
             if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -222,7 +226,6 @@ public class TrackerService extends Service {
                 double lon = locationList.get(i).getLongitude();
                 Log.d("MainLoc", String.valueOf(lat));
                 Log.d("MainLoc", String.valueOf(lon));
-
             }
         }
     }

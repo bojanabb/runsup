@@ -45,11 +45,10 @@ public class StopwatchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stopwatch);
         Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
         startService(intent);
-        startLocationUpdates();
+        //startLocationUpdates();
         final Button button = (Button) findViewById(R.id.button_stopwatch_start);
                     final Button button1 = (Button) findViewById(R.id.button_stopwatch_endworkout);
         mBroadcastReceiver = new MyBroadCastReceiver();
@@ -77,7 +76,8 @@ public class StopwatchActivity extends AppCompatActivity {
                                 Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
                                 intent.setAction(TrackerService.COMMAND_PAUSE);
                                 startService(intent);
-                                button.setText("Continue");
+                                button.setText(R.string.stopwatch_continue);
+                                button1.setText(R.string.stopwatch_endworkout);
                                 button1.setVisibility(View.VISIBLE);
                                 button1.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -109,6 +109,7 @@ public class StopwatchActivity extends AppCompatActivity {
                 }
             }
         });
+                    super.onCreate(savedInstanceState);
         final Button chooseType=(Button)findViewById(R.id.button_stopwatch_selectsport);
         chooseType.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -167,7 +168,7 @@ public class StopwatchActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    @Override
+   /* @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         if (requestCode == REQUEST_ID_LOCATION_PERMISSIONS) {
             Log.d("MainActivity",String.valueOf(grantResults.length));
@@ -178,10 +179,10 @@ public class StopwatchActivity extends AppCompatActivity {
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
-
+*/
     private void startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            Log.d(TAG, "Asking for permission");
+
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission
                     .ACCESS_COARSE_LOCATION) || ActivityCompat.shouldShowRequestPermissionRationale (this,
                     Manifest.permission.ACCESS_FINE_LOCATION)){
