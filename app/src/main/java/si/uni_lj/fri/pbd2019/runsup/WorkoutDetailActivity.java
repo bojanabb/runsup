@@ -1,4 +1,5 @@
 package si.uni_lj.fri.pbd2019.runsup;
+import android.Manifest;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.location.Location;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +35,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     double pace=0;
     double calories=0;
     int activity=0;
-    ArrayList<List<Location>> finalPositionList;
+    ArrayList<? extends  List<Location>> fPositionList;
 
     public static boolean doesPackageExists(Context context, String packageName) {
         final PackageManager packageManager = context.getPackageManager();
@@ -89,22 +91,34 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         TextView durationTextView = (TextView) findViewById(R.id.textview_workoutdetail_valueduration);
         String durationString= MainHelper.formatDuration(duration);
         durationTextView.setText(durationString);
-        String distanceString= MainHelper.formatDistance(distance);
-        TextView distanceTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuedistance);
-        distanceTextView.setText(distanceString+" km");
-        TextView paceTextView = (TextView) findViewById(R.id.textview_workoutdetail_valueavgpace);
-        String paceString= MainHelper.formatPace(pace);
-        paceTextView.setText(paceString+ "min/km");
-        TextView caloriesTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuecalories);
-        String caloriesString= MainHelper.formatCalories(calories);
-        caloriesTextView.setText(caloriesString+"  cal");
+
+        //TextView caloriesTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuecalories);
+
         TextView activityTextView = (TextView) findViewById(R.id.textview_workoutdetail_sportactivity);
         activityTextView.setText(SportActivities.getActivityType(this,activity));
         TextView date=(TextView) findViewById(R.id.textview_workoutdetail_activitydate);
         DateFormat currDate = SimpleDateFormat.getDateTimeInstance();
         Date today = Calendar.getInstance().getTime();
         date.setText(currDate.format(today));
-        final Button email = (Button) findViewById(R.id.button_workoutdetail_emailshare);
+        TextView distanceTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuedistance);
+        TextView paceTextView = (TextView) findViewById(R.id.textview_workoutdetail_valueavgpace);
+        TextView caloriesTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuecalories);
+        if (ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+
+            String distanceString= MainHelper.formatDistance(distance);
+            distanceTextView.setText(distanceString+" km");
+            String paceString= MainHelper.formatPace(pace);
+            paceTextView.setText(paceString+ "min/km");
+            String caloriesString= MainHelper.formatCalories(calories);
+            caloriesTextView.setText(caloriesString+"  cal");
+        }
+        else {
+            distanceTextView.setText(0+" km");
+            paceTextView.setText(0 + "min/km");
+            caloriesTextView.setText(0 +" kcal");
+        }
+            final Button email = (Button) findViewById(R.id.button_workoutdetail_emailshare);
         final Button facebook = (Button) findViewById(R.id.button_workoutdetail_fbsharebtn);
         final Button twitter = (Button) findViewById(R.id.button_workoutdetail_twittershare);
         email.setOnClickListener(new View.OnClickListener() {
@@ -154,12 +168,17 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     }
 
     public void getInfo() {
-        Intent in = getIntent();
-        duration=in.getExtras().getLong("duration");
-        distance=in.getExtras().getDouble("distance");
-        pace=in.getExtras().getDouble("pace");
-        calories=in.getExtras().getDouble("calories");
-        activity=in.getExtras().getInt("activity");
+        Bundle bundle = getIntent().getExtras();
+        sportActivity = bundle.getInt("SportActivity");
+        duration = bundle.getLong("duration");
+        if (ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+
+            pace = bundle.getDouble("pace");
+            calories = bundle.getDouble("calories");
+            distance = bundle.getDouble("distance");
+            fPositionList = bundle.getParcelableArrayList("fPositionList");
+        }
     }
 
 }

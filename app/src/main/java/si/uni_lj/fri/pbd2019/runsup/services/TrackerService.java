@@ -24,9 +24,11 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 
 import si.uni_lj.fri.pbd2019.runsup.StopwatchActivity;
+import si.uni_lj.fri.pbd2019.runsup.helpers.SportActivities;
 
 public class TrackerService extends Service {
 
@@ -37,12 +39,21 @@ public class TrackerService extends Service {
     private Location mCurrentLocation;
     LocationManager mLocationManager;
     public long duration=0;
-    int mState=0;
-
-    float distance=0;
+    static int state=0;
+    static int sportActivity=0;
+    static double distance=0;
     Boolean mRequestingLocationUpdates = false;
     String mLastUpdateTime;
+    static double timeFillingList = 0;
+    static double currentTimeFilling=0;
+    static double cal=0;
+    static double timeF=0;
+    static double difference=0;
     ArrayList<Location> locationList;
+    ArrayList<Double> time;
+    List<Float> speed;
+    static double timeS=0;
+    Location lastLocation;
     long start=0;
     Timer timer;
     Handler handler;
@@ -64,12 +75,21 @@ public class TrackerService extends Service {
         Intent broadCastIntent = new Intent();
         broadCastIntent.setAction(StopwatchActivity.TICK);
         duration =(SystemClock.uptimeMillis()	-start);
-        Log.d("Proba",String.valueOf(duration));
-        Log.d("Proba",String.valueOf(getDuration()));
 
         broadCastIntent.putExtra("duration",getDuration()/1000);
-        broadCastIntent.putExtra("pace", getPace());
+        broadCastIntent.putExtra("sportActivity", sportActivity);
         broadCastIntent.putExtra("state", getState());
+
+        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            broadCastIntent.putExtra("distance", distance);
+            broadCastIntent.putExtra("pace", getPace());
+            broadCastIntent.putExtra("positionList", locationList);
+            broadCastIntent.putExtra("calories", cal);
+            locationList.clear();
+            if(speed.size()>2) {
+                cal= SportActivities.countCalories(sportActivity, 60f, speed, timeFillingList/3600000.0);
+            }
+        }
         sendBroadcast(broadCastIntent);
     }
 
@@ -88,6 +108,9 @@ public class TrackerService extends Service {
     public void onCreate() {
         locationList=new ArrayList<Location>();
         handler=new Handler();
+        time=new ArrayList<Double>();
+        speed=new ArrayList<Float>();
+        locationList= new ArrayList<Location>();
         super.onCreate();
         Log.d("Proba", "Create");
     }
@@ -96,22 +119,40 @@ public class TrackerService extends Service {
     LocationListener locationListenerGPS=new LocationListener() {
         @Override
         public void onLocationChanged(android.location.Location location) {
-            double lat=location.getLatitude();
-            double lon=location.getLongitude();
+            timeF=duration;
+            difference=timeF-timeS;
+            timeS=timeF;
+            time.add(difference);
+            float lat=(float)location.getLatitude();
+            float lon=(float)location.getLongitude();
 //            Log.d("MainLoc", String.valueOf(lat));
 //            Log.d("MainLoc", String.valueOf(lon));
             int size=locationList.size();
-            if(mState==2){
-                distance=distance+locationList.get(size-1).distanceTo(location);
+            if(state==2 && lastLocation != null){
+                float latLast = (float)(lastLocation.getLatitude());
+                float lonLast = (float)(lastLocation.getLongitude());
+                distance=distance + distanceBetween(lat, lon, latLast, lonLast);
                 if(distance<=100){
                     locationList.add(location);
+                    speed.add(1000*(float) distance/getDuration());
+                }
+                else {
+                    speed.add(1000*(float) distance/getDuration());
+                    currentTimeFilling=duration;
                 }
             }
             else {
-                if (size != 0) {
-                    distance = distance + locationList.get(size - 1).distanceTo(location);
+                if (state==0) {
+                   if(lastLocation != null) {
+                       float latLast =(float)(lastLocation.getLatitude());
+                       float lonLast = (float) (lastLocation.getLongitude());
+                       distance=distance+distanceBetween(lat, lon, latLast, lonLast);
+                   }
+                    locationList.add(location);
+                   speed.add((float)distance/getDuration());
+                   timeFillingList = duration - currentTimeFilling;
                 }
-                locationList.add(location);
+            lastLocation = location;
             }
 
         }
@@ -134,7 +175,8 @@ public class TrackerService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if(intent.getAction()==COMMAND_START) {
-            mState=0;
+            sportActivity = intent.getExtras().getInt("sportActivity");
+            state=0;
             Log.d("Proba", "Start");
             mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -142,6 +184,7 @@ public class TrackerService extends Service {
                     @Override
                     public void onSuccess(Location location) {
                         if(location != null) {
+                            lastLocation = location;;
                             locationList.add(location);
                         }
                     }
@@ -158,16 +201,16 @@ public class TrackerService extends Service {
         }
         else if(intent.getAction()==COMMAND_PAUSE){
             this.duration =(SystemClock.uptimeMillis()	-start);
-            mState=1;
+            state=1;
             handler.removeMessages(0);
         }
         else if(intent.getAction()==COMMAND_CONTINUE) {
             start=SystemClock.uptimeMillis()-duration;
-            mState=2;
+            state=2;
             timeTick();
         }
         else if(intent.getAction()==COMMAND_STOP) {
-            mState=3;
+            state=3;
             handler.removeMessages(0);
             stopSelf();
         }
@@ -175,7 +218,7 @@ public class TrackerService extends Service {
     }
 
     public int getState() {
-        return mState;
+        return state;
     }
 
     public long getDuration() {
@@ -187,7 +230,9 @@ public class TrackerService extends Service {
     }
 
     public double getPace() {
-        return (getDuration()/60)/(getDistance()/1000);
+        if (distance == 0.0) return 0.0;
+        else if (2*minE(time)>duration-timeS) return 0.0;
+        else return (duration) / (distance * 60);
     }
 
     public TrackerService() {
@@ -231,5 +276,20 @@ public class TrackerService extends Service {
         double fin = Math.acos(f1+f2+f3);
 
         return 6366000*fin;
+    }
+
+    public double minE(ArrayList<Double> mList) {
+        double min=0;
+        if(mList.isEmpty()) return 0;
+        else {
+            int s=mList.size();
+            min=mList.get(0);
+            for(int i=0; i<s; i++) {
+                if(min<mList.get(i)) {
+                    min=mList.get(i);
+                }
+            }
+        }
+        return min;
     }
 }
