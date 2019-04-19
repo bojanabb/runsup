@@ -265,7 +265,7 @@ public class StopwatchActivity extends AppCompatActivity {
         if (ActivityCompat.checkSelfPermission(StopwatchActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(StopwatchActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             intent.putExtra("distance", distance);
-            intent.putExtra("pace", avg(paceList));
+            intent.putExtra("pace", MainHelper.formatPace(avg(paceList)));
             intent.putExtra("finalPositionList", fPositionList);
             intent.putExtra("calories", calories);
         }
