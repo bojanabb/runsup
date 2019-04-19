@@ -117,8 +117,9 @@ public class StopwatchActivity extends AppCompatActivity {
 
     @Override
     public void onPause() {
-        Log.d("MainActivity","in pause");
         unregisterReceiver(mBroadcastReceiver);
+        Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
+        stopService(intent);
         super.onPause();
     }
 
