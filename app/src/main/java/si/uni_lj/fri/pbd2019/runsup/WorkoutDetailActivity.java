@@ -152,7 +152,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
                 }
             }
         });
-
+//
         twitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
