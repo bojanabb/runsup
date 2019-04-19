@@ -37,7 +37,6 @@ public class TrackerService extends Service {
     private Location mCurrentLocation;
     LocationManager mLocationManager;
     public long duration=0;
-    //int sportType = 0;
     int mState=0;
 
     float distance=0;
@@ -59,23 +58,6 @@ public class TrackerService extends Service {
         }
     }
 
-    private void broadCastSend()
-    {
-        try
-        {
-            Intent mBroadCastIntent = new Intent();
-            mBroadCastIntent.setAction(StopwatchActivity.TICK);
-            mBroadCastIntent.putExtra("duration", String.valueOf(getDuration()));
-            mBroadCastIntent.putExtra("distance", getDistance());
-            mBroadCastIntent.putExtra("pace", getPace());
-            mBroadCastIntent.putExtra("state", getState());
-            sendBroadcast(mBroadCastIntent);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
 
     private void updateStopwatch()
     {

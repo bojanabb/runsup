@@ -30,7 +30,7 @@ public class StopwatchActivity extends AppCompatActivity {
     long duration=0;
     double distance=0;
     double pace=0;
-    int aType=0;
+    int activity=0;
     double calories=0;
     TextView txtvDistance;
     TextView txtvDuration;
@@ -147,7 +147,7 @@ public class StopwatchActivity extends AppCompatActivity {
                 txtvPace=(TextView) findViewById(R.id.textview_stopwatch_pace);
                 String paceRes=MainHelper.formatPace(pace);
                 txtvPace.setText(paceRes);
-                aType=intent.getExtras().getInt("sportActivity");
+                activity=intent.getExtras().getInt("sportActivity");
                 txtvCalories=(TextView) findViewById(R.id.textview_stopwatch_calories);
                 calories=intent.getExtras().getDouble("calories");
                 String calRes=MainHelper.formatCalories(calories);
@@ -239,7 +239,7 @@ public class StopwatchActivity extends AppCompatActivity {
         intent.putExtra("duration",duration);
         intent.putExtra("distance",distance);
         intent.putExtra("pace",pace);
-        intent.putExtra("activity",aType);
+        intent.putExtra("activity",activity);
         intent.putExtra("calories",calories);
     }
 }
