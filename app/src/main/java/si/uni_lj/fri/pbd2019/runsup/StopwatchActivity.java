@@ -128,7 +128,8 @@ public class StopwatchActivity extends AppCompatActivity {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(TICK);
         registerReceiver(mBroadcastReceiver, intentFilter);
-        super.onResume();
+        Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
+        startService(intent);        super.onResume();
     }
 
     class MyBroadCastReceiver extends BroadcastReceiver {

@@ -63,9 +63,11 @@ public class TrackerService extends Service {
     {
         Intent broadCastIntent = new Intent();
         broadCastIntent.setAction(StopwatchActivity.TICK);
-        this.duration =(SystemClock.uptimeMillis()	-start);
-        broadCastIntent.putExtra("duration", String.valueOf(getDuration()/1000));
-        broadCastIntent.putExtra("distance", getDistance());
+        duration =(SystemClock.uptimeMillis()	-start);
+        Log.d("Proba",String.valueOf(duration));
+        Log.d("Proba",String.valueOf(getDuration()));
+
+        broadCastIntent.putExtra("duration",getDuration()/1000);
         broadCastIntent.putExtra("pace", getPace());
         broadCastIntent.putExtra("state", getState());
         sendBroadcast(broadCastIntent);
@@ -75,6 +77,7 @@ public class TrackerService extends Service {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+                Log.d("Proba","tik");
                 updateStopwatch();
                 handler.postDelayed(this, 1000);
             }
@@ -86,6 +89,7 @@ public class TrackerService extends Service {
         locationList=new ArrayList<Location>();
         handler=new Handler();
         super.onCreate();
+        Log.d("Proba", "Create");
     }
 
 
@@ -131,9 +135,10 @@ public class TrackerService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if(intent.getAction()==COMMAND_START) {
             mState=0;
+            Log.d("Proba", "Start");
             mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                mFusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+               mFusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
                     @Override
                     public void onSuccess(Location location) {
                         if(location != null) {
