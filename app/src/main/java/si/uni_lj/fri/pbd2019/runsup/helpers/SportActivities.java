@@ -15,7 +15,7 @@ public class SportActivities {
     }
 
     public static double getMET(int activityType, Float speed) {
-       float speedn = (int)Math.ceil(speed * 2.23693629f);
+       float speedn = (int)Math.ceil(speed * 2.23694f);
        double met;
        if(activityType==0) {
            if(speedn==4) {
@@ -52,7 +52,7 @@ public class SportActivities {
                met=23.0;
            }
            else {
-                met=2.23693629f*speed*1.535353535;
+                met=2.23694f*speed*1.535353535;
            }
        }
        else if(activityType==1) {
@@ -69,7 +69,7 @@ public class SportActivities {
                met=3.5;
            }
            else {
-                met=2.23693629f*speed*1.14;
+                met=2.23694f*speed*1.14;
            }
        }
        else{
@@ -92,7 +92,7 @@ public class SportActivities {
                met=15.8;
            }
            else {
-               met=0.744444444*2.23693629f*speed;
+               met=0.744444444*2.23694f*speed;
            }
        }
        return met;

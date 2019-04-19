@@ -1,6 +1,5 @@
 package si.uni_lj.fri.pbd2019.runsup;
 
-
 import android.Manifest;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -22,7 +21,6 @@ import android.widget.TextView;
 import si.uni_lj.fri.pbd2019.runsup.helpers.MainHelper;
 import si.uni_lj.fri.pbd2019.runsup.helpers.SportActivities;
 import si.uni_lj.fri.pbd2019.runsup.services.TrackerService;
-
 
 public class StopwatchActivity extends AppCompatActivity {
 
