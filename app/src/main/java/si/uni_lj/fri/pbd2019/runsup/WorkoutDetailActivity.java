@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -109,7 +110,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
             String distanceString= MainHelper.formatDistance(distance);
             distanceTextView.setText(distanceString+" km");
             String paceString= MainHelper.formatPace(pace);
-            paceTextView.setText(paceString+ "min/km");
+            paceTextView.setText(new BigDecimal(paceString).toPlainString() + "min/km");
             String caloriesString= MainHelper.formatCalories(calories);
             caloriesTextView.setText(caloriesString+"  cal");
         }
