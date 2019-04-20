@@ -35,7 +35,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     double pace=0;
     double calories=0;
     int activity=0;
-    ArrayList<? extends  List<Location>> fPositionList;
+    ArrayList<? extends  List<Location>> finalPositionList;
 
     public static boolean doesPackageExists(Context context, String packageName) {
         final PackageManager packageManager = context.getPackageManager();
@@ -177,7 +177,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
             pace = bundle.getDouble("pace");
             calories = bundle.getDouble("calories");
             distance = bundle.getDouble("distance");
-            fPositionList = bundle.getParcelableArrayList("fPositionList");
+            finalPositionList = bundle.getParcelableArrayList("finalPositionList");
         }
     }
 

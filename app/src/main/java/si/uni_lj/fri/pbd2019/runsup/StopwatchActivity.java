@@ -130,10 +130,7 @@ public class StopwatchActivity extends AppCompatActivity {
     public void onPause() {
         unregisterReceiver(mBroadcastReceiver);
         Intent intent = new Intent(StopwatchActivity.this, TrackerService.class);
-        if(state==1 || state==3) {
             stopService(intent);
-        }
-        stopService(intent);
         super.onPause();
     }
 
