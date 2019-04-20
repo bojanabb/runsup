@@ -32,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="52dp"
-            android:text=" My Workout"
+            android:text="@string/workoutdetail_workoutname"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="@+id/view1"
             app:layout_constraintHorizontal_bias="0.45"
