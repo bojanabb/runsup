@@ -170,7 +170,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
 
     public void getInfo() {
         Bundle bundle = getIntent().getExtras();
-        sportActivity = bundle.getInt("SportActivity");
+        sportActivity = bundle.getInt("sportActivity");
         duration = bundle.getLong("duration");
         if (ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
