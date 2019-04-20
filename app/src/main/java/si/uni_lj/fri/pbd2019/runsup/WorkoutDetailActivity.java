@@ -175,9 +175,9 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         if (ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(WorkoutDetailActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 
+            distance = bundle.getDouble("distance");
             pace = bundle.getDouble("pace");
             calories = bundle.getDouble("calories");
-            distance = bundle.getDouble("distance");
             finalPositionList = bundle.getParcelableArrayList("finalPositionList");
         }
     }
