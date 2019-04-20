@@ -110,13 +110,13 @@ public class WorkoutDetailActivity extends AppCompatActivity {
             String distanceString= MainHelper.formatDistance(distance);
             distanceTextView.setText(distanceString+" km");
             String paceString= MainHelper.formatPace(pace);
-            paceTextView.setText(new BigDecimal(paceString).toPlainString() + "min/km");
+            paceTextView.setText(new BigDecimal(paceString).toPlainString() + " min/km");
             String caloriesString= MainHelper.formatCalories(calories);
-            caloriesTextView.setText(caloriesString+"  cal");
+            caloriesTextView.setText(new BigDecimal(caloriesString).toPlainString() + " cal");
         }
         else {
-            distanceTextView.setText(0+" km");
-            paceTextView.setText(0 + "min/km");
+            distanceTextView.setText(0+ " km");
+            paceTextView.setText(0 + " min/km");
             caloriesTextView.setText(0 +" kcal");
         }
             final Button email = (Button) findViewById(R.id.button_workoutdetail_emailshare);
