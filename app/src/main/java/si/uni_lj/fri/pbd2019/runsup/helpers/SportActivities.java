@@ -6,11 +6,11 @@ import java.util.List;
 
 public class SportActivities {
 
-    public static Integer[] act={1,2,3};
+    public static Integer[] act={0,1,2};
 
     public static String getActivityType(Context ctx, Integer type) {
-        if(type==1) return "Running";
-        else if(type==2) return "Walking";
+        if(type==0) return "Running";
+        else if(type==1) return "Walking";
         return "Cycling";
     }
 

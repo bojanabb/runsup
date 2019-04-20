@@ -216,12 +216,17 @@ public class StopwatchActivity extends AppCompatActivity {
         if (type == 0) {
             btnTypeAct.setText("Running");
             sportActivity = 0;
-        } else if (type == 1) {
-            btnTypeAct.setText("Walking");
-            sportActivity = 1;
-        } else {
-            btnTypeAct.setText("Cycling");
-            sportActivity = 2;
+
+            }
+            else {
+                if (type == 1) {
+                btnTypeAct.setText("Walking");
+                sportActivity = 1;
+            } else {
+                btnTypeAct.setText("Cycling");
+                sportActivity = 2;
+
+            }
         }
     }
 
@@ -261,7 +266,7 @@ public class StopwatchActivity extends AppCompatActivity {
         intent.putExtra("duration", duration);
 //        intent.putExtra("distance",distance);
 //        intent.putExtra("pace",pace);
-        intent.putExtra("activity", activity);
+        intent.putExtra("sportActivity", activity);
 //        intent.putExtra("calories",calories);
         if (ActivityCompat.checkSelfPermission(StopwatchActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(StopwatchActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {

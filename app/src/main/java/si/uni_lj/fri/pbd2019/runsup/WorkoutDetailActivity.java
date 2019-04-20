@@ -35,7 +35,6 @@ public class WorkoutDetailActivity extends AppCompatActivity {
     double distance=0;
     double pace=0;
     double calories=0;
-    int activity=0;
     ArrayList<? extends  List<Location>> finalPositionList;
 
     public static boolean doesPackageExists(Context context, String packageName) {
@@ -96,7 +95,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         //TextView caloriesTextView = (TextView) findViewById(R.id.textview_workoutdetail_valuecalories);
 
         TextView activityTextView = (TextView) findViewById(R.id.textview_workoutdetail_sportactivity);
-        activityTextView.setText(SportActivities.getActivityType(this,activity));
+        activityTextView.setText(SportActivities.getActivityType(this,sportActivity));
         TextView date=(TextView) findViewById(R.id.textview_workoutdetail_activitydate);
         DateFormat currDate = SimpleDateFormat.getDateTimeInstance();
         Date today = Calendar.getInstance().getTime();
