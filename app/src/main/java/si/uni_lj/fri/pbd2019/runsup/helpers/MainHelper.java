@@ -35,7 +35,7 @@ public class MainHelper {
     }
 
     public static String formatPace(double n) {
-        double a = Math.round((n*100.0)) / 100.0 ;
+        double a = (double)Math.round((n*100.0)) / 100.0 ;
         return Double.toString(a);
     }
 

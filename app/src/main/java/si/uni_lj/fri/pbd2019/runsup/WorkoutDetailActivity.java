@@ -111,7 +111,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
             String paceString= MainHelper.formatPace(pace);
             paceTextView.setText(new BigDecimal(paceString).toPlainString() + " min/km");
             String caloriesString= MainHelper.formatCalories(calories);
-            caloriesTextView.setText(new BigDecimal(caloriesString).toPlainString() + " cal");
+            caloriesTextView.setText(new BigDecimal(caloriesString).toPlainString() + " kcal");
         }
         else {
             distanceTextView.setText(0+ " km");
