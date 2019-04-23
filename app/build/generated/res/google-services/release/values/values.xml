@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://mine-ea18d.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">774252607608</string>
+    <string name="google_api_key" translatable="false">AIzaSyCC0CqFqvk70uQwHxZLfgs8NVhx2BPNadk</string>
+    <string name="google_app_id" translatable="false">1:774252607608:android:9fc737962479b7c5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCC0CqFqvk70uQwHxZLfgs8NVhx2BPNadk</string>
+    <string name="google_storage_bucket" translatable="false">mine-ea18d.appspot.com</string>
+    <string name="project_id" translatable="false">mine-ea18d</string>
+</resources>

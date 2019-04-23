@@ -1,0 +1,500 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0d0a42ff2edd24d920d9919bf890ddbe\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\5ee3be9172cd7b80b9fc48fdaf33559c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-plus:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-plus-16.0.0.aar\c68781b3ab301b033e160326c7915198\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-audience:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-audience-16.0.0.aar\b5a0e0d925a4951ceafc51d478e01a10\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\64f70ff31b84111d3aa01fbb022c9b6c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\7bd9a8137a2ca202650b282221bc97ac\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\ee7b3532bb0f94e681e5c7c1782df6dc\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\d9baeceb60f145fd45c1389300562906\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\7aefd2e515fa5f48f53b62650444a73e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-16.4.0.aar\ee5a30095277bf94b2cb931839b6a89a\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.4.0.aar\273d12d396285c2a6a15f60e6aebf170\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\f7117129c143efb45049477ee88d81b3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\426aaedf1bdadd00c7b5961e635caf29\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\96fad8337c3603a82b8080739375cdd6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\985be75b0fa53e8d165fd8eaa2280e54\AndroidManifest.xml:2:1-7:12
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.1.aar\22687cc0a4d9957c20bd146e2aac16a8\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+	package
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:1-51:12
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:11:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:12:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:12:22-64
+supports-screens
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:13:5-51
+	android:anyDensity
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:13:23-48
+application
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:16:5-49:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0d0a42ff2edd24d920d9919bf890ddbe\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0d0a42ff2edd24d920d9919bf890ddbe\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\5ee3be9172cd7b80b9fc48fdaf33559c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\5ee3be9172cd7b80b9fc48fdaf33559c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-plus:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-plus-16.0.0.aar\c68781b3ab301b033e160326c7915198\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-plus-16.0.0.aar\c68781b3ab301b033e160326c7915198\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-audience:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-audience-16.0.0.aar\b5a0e0d925a4951ceafc51d478e01a10\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-audience:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-audience-16.0.0.aar\b5a0e0d925a4951ceafc51d478e01a10\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\64f70ff31b84111d3aa01fbb022c9b6c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\64f70ff31b84111d3aa01fbb022c9b6c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\7bd9a8137a2ca202650b282221bc97ac\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\7bd9a8137a2ca202650b282221bc97ac\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\ee7b3532bb0f94e681e5c7c1782df6dc\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\ee7b3532bb0f94e681e5c7c1782df6dc\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\d9baeceb60f145fd45c1389300562906\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\d9baeceb60f145fd45c1389300562906\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\7aefd2e515fa5f48f53b62650444a73e\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\7aefd2e515fa5f48f53b62650444a73e\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-16.4.0.aar\ee5a30095277bf94b2cb931839b6a89a\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-16.4.0.aar\ee5a30095277bf94b2cb931839b6a89a\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.4.0.aar\273d12d396285c2a6a15f60e6aebf170\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.4.0.aar\273d12d396285c2a6a15f60e6aebf170\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\f7117129c143efb45049477ee88d81b3\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\f7117129c143efb45049477ee88d81b3\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\426aaedf1bdadd00c7b5961e635caf29\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\426aaedf1bdadd00c7b5961e635caf29\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\96fad8337c3603a82b8080739375cdd6\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\96fad8337c3603a82b8080739375cdd6\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:7:5-11:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:19:9-41
+	android:roundIcon
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:20:9-54
+	android:icon
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:22:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:32:9-34:55
+	android:value
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:34:13-52
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:33:13-58
+activity#si.uni_lj.fri.pbd2019.runsup2.MapsActivity
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:36:9-39:68
+	android:label
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:39:13-56
+	android:exported
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:38:13-36
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:37:13-41
+activity#si.uni_lj.fri.pbd2019.runsup2.WorkoutDetailActivity
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:40:9-41:20
+	android:exported
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:40:57-80
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:40:19-56
+activity#si.uni_lj.fri.pbd2019.runsup2.StopwatchActivity
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:42:9-48:20
+	android:exported
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:42:53-76
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:42:19-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:43:13-47:29
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:44:27-74
+action#android.intent.action.MAIN
+ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:45:17-46:26
+	android:name
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml:45:25-66
+uses-sdk
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0d0a42ff2edd24d920d9919bf890ddbe\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\0d0a42ff2edd24d920d9919bf890ddbe\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\5ee3be9172cd7b80b9fc48fdaf33559c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\5ee3be9172cd7b80b9fc48fdaf33559c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-plus:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-plus-16.0.0.aar\c68781b3ab301b033e160326c7915198\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-plus:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-plus-16.0.0.aar\c68781b3ab301b033e160326c7915198\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-audience:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-audience-16.0.0.aar\b5a0e0d925a4951ceafc51d478e01a10\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-audience:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-audience-16.0.0.aar\b5a0e0d925a4951ceafc51d478e01a10\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\64f70ff31b84111d3aa01fbb022c9b6c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\64f70ff31b84111d3aa01fbb022c9b6c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\7bd9a8137a2ca202650b282221bc97ac\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\7bd9a8137a2ca202650b282221bc97ac\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\ee7b3532bb0f94e681e5c7c1782df6dc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\ee7b3532bb0f94e681e5c7c1782df6dc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\d9baeceb60f145fd45c1389300562906\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\d9baeceb60f145fd45c1389300562906\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\7aefd2e515fa5f48f53b62650444a73e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\7aefd2e515fa5f48f53b62650444a73e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-16.4.0.aar\ee5a30095277bf94b2cb931839b6a89a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-16.4.0.aar\ee5a30095277bf94b2cb931839b6a89a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.4.0.aar\273d12d396285c2a6a15f60e6aebf170\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.4.0.aar\273d12d396285c2a6a15f60e6aebf170\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\f7117129c143efb45049477ee88d81b3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\f7117129c143efb45049477ee88d81b3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\426aaedf1bdadd00c7b5961e635caf29\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\426aaedf1bdadd00c7b5961e635caf29\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\96fad8337c3603a82b8080739375cdd6\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\96fad8337c3603a82b8080739375cdd6\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\985be75b0fa53e8d165fd8eaa2280e54\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\985be75b0fa53e8d165fd8eaa2280e54\AndroidManifest.xml:5:5-43
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.1.aar\22687cc0a4d9957c20bd146e2aac16a8\AndroidManifest.xml:8:5-10:41
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.1.aar\22687cc0a4d9957c20bd146e2aac16a8\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\bulat\AndroidStudioProjects\RunsUp2\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e34e3186bade163bb9c921eeae4aa76c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\e45f0671e9d4819d0c0aa3a551042560\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\9e14911ce8c2f623e1074f189a7ed0f1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\c40d4a7e4aca9603183eed20837d2e19\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8ceb696061fa67ad61742488dcbf49c0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\88d859ac0556f230708d4949b67fbf96\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\1593105f4e813f0f13fda2d9e7782d91\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\9dcdfa9282a2b9c1e775f368a64f65d5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\0df52ba602fdf2afe116ee6c2ffc296c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\9bb020ed622fa52feedcb2b11bb1ae8b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\1de9fc3fdb17a20e630b69d98c1ab48c\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\3d38a79f27a30ac7d79089bb250546ba\AndroidManifest.xml:27:13-51
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\ce03ad0728c5bef07be87d50ec1e90e1\AndroidManifest.xml:28:9-32
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\a984ad63e17e86ebf2c13f8708abe316\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1f03e8e361c5f72d82ce862822e76f0b\AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\b7ec58292b22ed3fb2828aaca9be9289\AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\8df873b5855659519090051a3382cda0\AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\f133efc651692a01d8ffc27aa68d38f2\AndroidManifest.xml:11:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-impl-16.4.0.aar\104250cff320c7a45784b81bffc60ab5\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-measurement-16.4.0.aar\2464b08df97a6a198fb3adcdcc0a5c67\AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\e2e5f383f0dacfe8616f8530517451e0\AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\0b27474ed67be312b6c664ab513dbd89\AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\bulat\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\1ac58a8cb3f617f4608b74f8b28feda6\AndroidManifest.xml:26:13-58
